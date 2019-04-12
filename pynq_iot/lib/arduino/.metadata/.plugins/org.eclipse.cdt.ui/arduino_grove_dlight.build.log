@@ -1,0 +1,21 @@
+17:19:17 **** Build of configuration Debug for project arduino_grove_dlight ****
+make all 
+'Building file: ../src/arduino_grove_dlight.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O1 -g3 -c -fmessage-length=0 -MT"src/arduino_grove_dlight.o" -I../../bsp_iop_arduino/iop_arduino_mb/include -mlittle-endian -mcpu=v9.5 -mxl-soft-mul -Wl,--no-relax -MMD -MP -MF"src/arduino_grove_dlight.d" -MT"src/arduino_grove_dlight.o" -o "src/arduino_grove_dlight.o" "../src/arduino_grove_dlight.c"
+'Finished building: ../src/arduino_grove_dlight.c'
+' '
+'Building target: arduino_grove_dlight.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../bsp_iop_arduino/iop_arduino_mb/lib -mlittle-endian -mcpu=v9.5 -mxl-soft-mul -Wl,--no-relax -o "arduino_grove_dlight.elf"  ./src/arduino_grove_dlight.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: arduino_grove_dlight.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size arduino_grove_dlight.elf  |tee "arduino_grove_dlight.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  19596	    520	   3692	  23808	   5d00	arduino_grove_dlight.elf
+'Finished building: arduino_grove_dlight.elf.size'
+' '
+
+17:19:21 Build Finished (took 3s.803ms)
+

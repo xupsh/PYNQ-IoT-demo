@@ -1,0 +1,26 @@
+17:19:53 **** Build of configuration Debug for project arduino_lcd18 ****
+make all 
+'Building file: ../src/ST7735.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/ST7735.o" -I../../bsp_iop_arduino/iop_arduino_mb/include -mlittle-endian -mcpu=v9.6 -mxl-soft-mul -Wl,--no-relax -MMD -MP -MF"src/ST7735.d" -MT"src/ST7735.o" -o "src/ST7735.o" "../src/ST7735.c"
+'Finished building: ../src/ST7735.c'
+' '
+'Building file: ../src/arduino_lcd18.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/arduino_lcd18.o" -I../../bsp_iop_arduino/iop_arduino_mb/include -mlittle-endian -mcpu=v9.6 -mxl-soft-mul -Wl,--no-relax -MMD -MP -MF"src/arduino_lcd18.d" -MT"src/arduino_lcd18.o" -o "src/arduino_lcd18.o" "../src/arduino_lcd18.c"
+'Finished building: ../src/arduino_lcd18.c'
+' '
+'Building target: arduino_lcd18.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../bsp_iop_arduino/iop_arduino_mb/lib -mlittle-endian -mcpu=v9.6 -mxl-soft-mul -Wl,--no-relax -o "arduino_lcd18.elf"  ./src/ST7735.o ./src/arduino_lcd18.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: arduino_lcd18.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size arduino_lcd18.elf  |tee "arduino_lcd18.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  56228	    640	   3836	  60704	   ed20	arduino_lcd18.elf
+'Finished building: arduino_lcd18.elf.size'
+' '
+
+17:19:58 Build Finished (took 5s.85ms)
+

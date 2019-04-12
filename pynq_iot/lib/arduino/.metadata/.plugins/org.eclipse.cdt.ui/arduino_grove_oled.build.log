@@ -1,0 +1,21 @@
+17:19:44 **** Build of configuration Debug for project arduino_grove_oled ****
+make all 
+'Building file: ../src/arduino_grove_oled.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/arduino_grove_oled.o" -I../../bsp_iop_arduino/iop_arduino_mb/include -mlittle-endian -mcpu=v9.5 -mxl-soft-mul -Wl,--no-relax -MMD -MP -MF"src/arduino_grove_oled.d" -MT"src/arduino_grove_oled.o" -o "src/arduino_grove_oled.o" "../src/arduino_grove_oled.c"
+'Finished building: ../src/arduino_grove_oled.c'
+' '
+'Building target: arduino_grove_oled.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../bsp_iop_arduino/iop_arduino_mb/lib -mlittle-endian -mcpu=v9.5 -mxl-soft-mul -Wl,--no-relax -o "arduino_grove_oled.elf"  ./src/arduino_grove_oled.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: arduino_grove_oled.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size arduino_grove_oled.elf  |tee "arduino_grove_oled.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  14932	    432	   3388	  18752	   4940	arduino_grove_oled.elf
+'Finished building: arduino_grove_oled.elf.size'
+' '
+
+17:19:47 Build Finished (took 3s.574ms)
+

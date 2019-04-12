@@ -1,0 +1,21 @@
+17:19:48 **** Build of configuration Debug for project arduino_grove_th02 ****
+make all 
+'Building file: ../src/arduino_grove_th02.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O1 -g3 -c -fmessage-length=0 -MT"src/arduino_grove_th02.o" -I../../bsp_iop_arduino/iop_arduino_mb/include -mlittle-endian -mcpu=v9.5 -mxl-soft-mul -Wl,--no-relax -MMD -MP -MF"src/arduino_grove_th02.d" -MT"src/arduino_grove_th02.o" -o "src/arduino_grove_th02.o" "../src/arduino_grove_th02.c"
+'Finished building: ../src/arduino_grove_th02.c'
+' '
+'Building target: arduino_grove_th02.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../bsp_iop_arduino/iop_arduino_mb/lib -mlittle-endian -mcpu=v9.5 -mxl-soft-mul -Wl,--no-relax -o "arduino_grove_th02.elf"  ./src/arduino_grove_th02.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: arduino_grove_th02.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size arduino_grove_th02.elf  |tee "arduino_grove_th02.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  18780	    520	   3636	  22936	   5998	arduino_grove_th02.elf
+'Finished building: arduino_grove_th02.elf.size'
+' '
+
+17:19:52 Build Finished (took 3s.792ms)
+

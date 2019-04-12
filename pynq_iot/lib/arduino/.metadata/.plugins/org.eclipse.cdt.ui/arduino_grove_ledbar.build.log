@@ -1,0 +1,21 @@
+17:19:39 **** Build of configuration Debug for project arduino_grove_ledbar ****
+make all 
+'Building file: ../src/arduino_grove_ledbar.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/arduino_grove_ledbar.o" -I../../bsp_iop_arduino/iop_arduino_mb/include -mlittle-endian -mcpu=v9.5 -mxl-soft-mul -Wl,--no-relax -MMD -MP -MF"src/arduino_grove_ledbar.d" -MT"src/arduino_grove_ledbar.o" -o "src/arduino_grove_ledbar.o" "../src/arduino_grove_ledbar.c"
+'Finished building: ../src/arduino_grove_ledbar.c'
+' '
+'Building target: arduino_grove_ledbar.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../bsp_iop_arduino/iop_arduino_mb/lib -mlittle-endian -mcpu=v9.5 -mxl-soft-mul -Wl,--no-relax -o "arduino_grove_ledbar.elf"  ./src/arduino_grove_ledbar.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: arduino_grove_ledbar.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size arduino_grove_ledbar.elf  |tee "arduino_grove_ledbar.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  19476	    536	   3612	  23624	   5c48	arduino_grove_ledbar.elf
+'Finished building: arduino_grove_ledbar.elf.size'
+' '
+
+17:19:43 Build Finished (took 3s.925ms)
+

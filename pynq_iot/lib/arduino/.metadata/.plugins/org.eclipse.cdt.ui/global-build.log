@@ -1,0 +1,298 @@
+17:18:54 **** Clean-only build of configuration Debug for project arduino_analog ****
+make clean 
+rm -rf  ./src/arduino_analog.o  ./src/arduino_analog.d  arduino_analog.elf.size  arduino_analog.elf arduino_analog.bin
+' '
+17:18:57 **** Build of configuration Debug for project arduino_analog ****
+make all 
+'Building file: ../src/arduino_analog.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/arduino_analog.o" -I../../bsp_iop_arduino/iop_arduino_mb/include -mlittle-endian -mcpu=v9.6 -mxl-soft-mul -Wl,--no-relax -MMD -MP -MF"src/arduino_analog.d" -MT"src/arduino_analog.o" -o "src/arduino_analog.o" "../src/arduino_analog.c"
+'Finished building: ../src/arduino_analog.c'
+' '
+'Building target: arduino_analog.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../bsp_iop_arduino/iop_arduino_mb/lib -mlittle-endian -mcpu=v9.6 -mxl-soft-mul -Wl,--no-relax -o "arduino_analog.elf"  ./src/arduino_analog.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: arduino_analog.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size arduino_analog.elf  |tee "arduino_analog.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  34448	    652	   3564	  38664	   9708	arduino_analog.elf
+'Finished building: arduino_analog.elf.size'
+' '
+17:19:04 **** Clean-only build of configuration Debug for project arduino_grove_adc ****
+make clean 
+rm -rf  ./src/arduino_grove_adc.o  ./src/arduino_grove_adc.d  arduino_grove_adc.elf.size  arduino_grove_adc.elf arduino_grove_adc.bin
+' '
+17:19:06 **** Build of configuration Debug for project arduino_grove_adc ****
+make all 
+'Building file: ../src/arduino_grove_adc.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O3 -g3 -c -fmessage-length=0 -MT"src/arduino_grove_adc.o" -I../../bsp_iop_arduino/iop_arduino_mb/include -mlittle-endian -mcpu=v9.5 -mxl-soft-mul -Wl,--no-relax -MMD -MP -MF"src/arduino_grove_adc.d" -MT"src/arduino_grove_adc.o" -o "src/arduino_grove_adc.o" "../src/arduino_grove_adc.c"
+'Finished building: ../src/arduino_grove_adc.c'
+' '
+'Building target: arduino_grove_adc.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../bsp_iop_arduino/iop_arduino_mb/lib -mlittle-endian -mcpu=v9.5 -mxl-soft-mul -Wl,--no-relax -o "arduino_grove_adc.elf"  ./src/arduino_grove_adc.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: arduino_grove_adc.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size arduino_grove_adc.elf  |tee "arduino_grove_adc.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  28164	    520	   1844	  30528	   7740	arduino_grove_adc.elf
+'Finished building: arduino_grove_adc.elf.size'
+' '
+17:19:10 **** Clean-only build of configuration Debug for project arduino_grove_buzzer ****
+make clean 
+rm -rf  ./src/arduino_grove_buzzer.o  ./src/arduino_grove_buzzer.d  arduino_grove_buzzer.elf.size  arduino_grove_buzzer.elf arduino_grove_buzzer.bin
+' '
+17:19:12 **** Build of configuration Debug for project arduino_grove_buzzer ****
+make all 
+'Building file: ../src/arduino_grove_buzzer.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/arduino_grove_buzzer.o" -I../../bsp_iop_arduino/iop_arduino_mb/include -mlittle-endian -mcpu=v9.5 -mxl-soft-mul -Wl,--no-relax -MMD -MP -MF"src/arduino_grove_buzzer.d" -MT"src/arduino_grove_buzzer.o" -o "src/arduino_grove_buzzer.o" "../src/arduino_grove_buzzer.c"
+'Finished building: ../src/arduino_grove_buzzer.c'
+' '
+'Building target: arduino_grove_buzzer.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../bsp_iop_arduino/iop_arduino_mb/lib -mlittle-endian -mcpu=v9.5 -mxl-soft-mul -Wl,--no-relax -o "arduino_grove_buzzer.elf"  ./src/arduino_grove_buzzer.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: arduino_grove_buzzer.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size arduino_grove_buzzer.elf  |tee "arduino_grove_buzzer.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  17768	    536	   3576	  21880	   5578	arduino_grove_buzzer.elf
+'Finished building: arduino_grove_buzzer.elf.size'
+' '
+17:19:16 **** Clean-only build of configuration Debug for project arduino_grove_dlight ****
+make clean 
+rm -rf  ./src/arduino_grove_dlight.o  ./src/arduino_grove_dlight.d  arduino_grove_dlight.elf.size  arduino_grove_dlight.elf arduino_grove_dlight.bin
+' '
+17:19:17 **** Build of configuration Debug for project arduino_grove_dlight ****
+make all 
+'Building file: ../src/arduino_grove_dlight.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O1 -g3 -c -fmessage-length=0 -MT"src/arduino_grove_dlight.o" -I../../bsp_iop_arduino/iop_arduino_mb/include -mlittle-endian -mcpu=v9.5 -mxl-soft-mul -Wl,--no-relax -MMD -MP -MF"src/arduino_grove_dlight.d" -MT"src/arduino_grove_dlight.o" -o "src/arduino_grove_dlight.o" "../src/arduino_grove_dlight.c"
+'Finished building: ../src/arduino_grove_dlight.c'
+' '
+'Building target: arduino_grove_dlight.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../bsp_iop_arduino/iop_arduino_mb/lib -mlittle-endian -mcpu=v9.5 -mxl-soft-mul -Wl,--no-relax -o "arduino_grove_dlight.elf"  ./src/arduino_grove_dlight.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: arduino_grove_dlight.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size arduino_grove_dlight.elf  |tee "arduino_grove_dlight.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  19596	    520	   3692	  23808	   5d00	arduino_grove_dlight.elf
+'Finished building: arduino_grove_dlight.elf.size'
+' '
+17:19:21 **** Clean-only build of configuration Debug for project arduino_grove_ear_hr ****
+make clean 
+rm -rf  ./src/arduino_grove_ear_hr.o  ./src/arduino_grove_ear_hr.d  arduino_grove_ear_hr.elf.size  arduino_grove_ear_hr.elf arduino_grove_ear_hr.bin
+' '
+17:19:22 **** Build of configuration Debug for project arduino_grove_ear_hr ****
+make all 
+'Building file: ../src/arduino_grove_ear_hr.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O1 -g3 -c -fmessage-length=0 -MT"src/arduino_grove_ear_hr.o" -I../../bsp_iop_arduino/iop3_mb/include -mlittle-endian -mcpu=v9.5 -mxl-soft-mul -Wl,--no-relax -MMD -MP -MF"src/arduino_grove_ear_hr.d" -MT"src/arduino_grove_ear_hr.o" -o "src/arduino_grove_ear_hr.o" "../src/arduino_grove_ear_hr.c"
+../src/arduino_grove_ear_hr.c:53:29: fatal error: circular_buffer.h: No such file or directory
+ #include "circular_buffer.h"
+                             ^
+compilation terminated.
+make: *** [src/arduino_grove_ear_hr.o] ´íÎó 1
+17:19:23 **** Clean-only build of configuration Debug for project arduino_grove_finger_hr ****
+make clean 
+rm -rf  ./src/arduino_grove_finger_hr.o  ./src/arduino_grove_finger_hr.d  arduino_grove_finger_hr.elf.size  arduino_grove_finger_hr.elf arduino_grove_finger_hr.bin
+' '
+17:19:24 **** Build of configuration Debug for project arduino_grove_finger_hr ****
+make all 
+'Building file: ../src/arduino_grove_finger_hr.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O1 -g3 -c -fmessage-length=0 -MT"src/arduino_grove_finger_hr.o" -I../../bsp_iop_arduino/iop_arduino_mb/include -mlittle-endian -mcpu=v9.5 -mxl-soft-mul -Wl,--no-relax -MMD -MP -MF"src/arduino_grove_finger_hr.d" -MT"src/arduino_grove_finger_hr.o" -o "src/arduino_grove_finger_hr.o" "../src/arduino_grove_finger_hr.c"
+'Finished building: ../src/arduino_grove_finger_hr.c'
+' '
+'Building target: arduino_grove_finger_hr.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../bsp_iop_arduino/iop_arduino_mb/lib -mlittle-endian -mcpu=v9.5 -mxl-soft-mul -Wl,--no-relax -o "arduino_grove_finger_hr.elf"  ./src/arduino_grove_finger_hr.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: arduino_grove_finger_hr.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size arduino_grove_finger_hr.elf  |tee "arduino_grove_finger_hr.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  18284	    520	   3636	  22440	   57a8	arduino_grove_finger_hr.elf
+'Finished building: arduino_grove_finger_hr.elf.size'
+' '
+17:19:28 **** Clean-only build of configuration Debug for project arduino_grove_haptic_motor ****
+make clean 
+rm -rf  ./src/arduino_grove_haptic_motor.o  ./src/arduino_grove_haptic_motor.d  arduino_grove_haptic_motor.elf.size  arduino_grove_haptic_motor.elf arduino_grove_haptic_motor.bin
+' '
+17:19:29 **** Build of configuration Debug for project arduino_grove_haptic_motor ****
+make all 
+'Building file: ../src/arduino_grove_haptic_motor.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O1 -g3 -c -fmessage-length=0 -MT"src/arduino_grove_haptic_motor.o" -I../../bsp_iop_arduino/iop_arduino_mb/include -mlittle-endian -mcpu=v9.5 -mxl-soft-mul -Wl,--no-relax -MMD -MP -MF"src/arduino_grove_haptic_motor.d" -MT"src/arduino_grove_haptic_motor.o" -o "src/arduino_grove_haptic_motor.o" "../src/arduino_grove_haptic_motor.c"
+'Finished building: ../src/arduino_grove_haptic_motor.c'
+' '
+'Building target: arduino_grove_haptic_motor.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../bsp_iop_arduino/iop_arduino_mb/lib -mlittle-endian -mcpu=v9.5 -mxl-soft-mul -Wl,--no-relax -o "arduino_grove_haptic_motor.elf"  ./src/arduino_grove_haptic_motor.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: arduino_grove_haptic_motor.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size arduino_grove_haptic_motor.elf  |tee "arduino_grove_haptic_motor.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  12412	    432	   3380	  16224	   3f60	arduino_grove_haptic_motor.elf
+'Finished building: arduino_grove_haptic_motor.elf.size'
+' '
+17:19:33 **** Clean-only build of configuration Debug for project arduino_grove_imu ****
+make clean 
+rm -rf  ./src/arduino_grove_imu.o  ./src/arduino_grove_imu.d  arduino_grove_imu.elf.size  arduino_grove_imu.elf arduino_grove_imu.bin
+' '
+17:19:34 **** Build of configuration Debug for project arduino_grove_imu ****
+make all 
+'Building file: ../src/arduino_grove_imu.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O1 -g3 -c -fmessage-length=0 -MT"src/arduino_grove_imu.o" -I../../bsp_iop_arduino/iop_arduino_mb/include -mlittle-endian -mcpu=v9.5 -mxl-soft-mul -Wl,--no-relax -MMD -MP -MF"src/arduino_grove_imu.d" -MT"src/arduino_grove_imu.o" -o "src/arduino_grove_imu.o" "../src/arduino_grove_imu.c"
+'Finished building: ../src/arduino_grove_imu.c'
+' '
+'Building target: arduino_grove_imu.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../bsp_iop_arduino/iop_arduino_mb/lib -mlittle-endian -mcpu=v9.5 -mxl-soft-mul -Wl,--no-relax -o "arduino_grove_imu.elf"  ./src/arduino_grove_imu.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: arduino_grove_imu.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size arduino_grove_imu.elf  |tee "arduino_grove_imu.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  24944	    520	   3688	  29152	   71e0	arduino_grove_imu.elf
+'Finished building: arduino_grove_imu.elf.size'
+' '
+17:19:38 **** Clean-only build of configuration Debug for project arduino_grove_ledbar ****
+make clean 
+rm -rf  ./src/arduino_grove_ledbar.o  ./src/arduino_grove_ledbar.d  arduino_grove_ledbar.elf.size  arduino_grove_ledbar.elf arduino_grove_ledbar.bin
+' '
+17:19:39 **** Build of configuration Debug for project arduino_grove_ledbar ****
+make all 
+'Building file: ../src/arduino_grove_ledbar.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/arduino_grove_ledbar.o" -I../../bsp_iop_arduino/iop_arduino_mb/include -mlittle-endian -mcpu=v9.5 -mxl-soft-mul -Wl,--no-relax -MMD -MP -MF"src/arduino_grove_ledbar.d" -MT"src/arduino_grove_ledbar.o" -o "src/arduino_grove_ledbar.o" "../src/arduino_grove_ledbar.c"
+'Finished building: ../src/arduino_grove_ledbar.c'
+' '
+'Building target: arduino_grove_ledbar.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../bsp_iop_arduino/iop_arduino_mb/lib -mlittle-endian -mcpu=v9.5 -mxl-soft-mul -Wl,--no-relax -o "arduino_grove_ledbar.elf"  ./src/arduino_grove_ledbar.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: arduino_grove_ledbar.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size arduino_grove_ledbar.elf  |tee "arduino_grove_ledbar.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  19476	    536	   3612	  23624	   5c48	arduino_grove_ledbar.elf
+'Finished building: arduino_grove_ledbar.elf.size'
+' '
+17:19:43 **** Clean-only build of configuration Debug for project arduino_grove_oled ****
+make clean 
+rm -rf  ./src/arduino_grove_oled.o  ./src/arduino_grove_oled.d  arduino_grove_oled.elf.size  arduino_grove_oled.elf arduino_grove_oled.bin
+' '
+17:19:44 **** Build of configuration Debug for project arduino_grove_oled ****
+make all 
+'Building file: ../src/arduino_grove_oled.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/arduino_grove_oled.o" -I../../bsp_iop_arduino/iop_arduino_mb/include -mlittle-endian -mcpu=v9.5 -mxl-soft-mul -Wl,--no-relax -MMD -MP -MF"src/arduino_grove_oled.d" -MT"src/arduino_grove_oled.o" -o "src/arduino_grove_oled.o" "../src/arduino_grove_oled.c"
+'Finished building: ../src/arduino_grove_oled.c'
+' '
+'Building target: arduino_grove_oled.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../bsp_iop_arduino/iop_arduino_mb/lib -mlittle-endian -mcpu=v9.5 -mxl-soft-mul -Wl,--no-relax -o "arduino_grove_oled.elf"  ./src/arduino_grove_oled.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: arduino_grove_oled.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size arduino_grove_oled.elf  |tee "arduino_grove_oled.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  14932	    432	   3388	  18752	   4940	arduino_grove_oled.elf
+'Finished building: arduino_grove_oled.elf.size'
+' '
+17:19:47 **** Clean-only build of configuration Debug for project arduino_grove_th02 ****
+make clean 
+rm -rf  ./src/arduino_grove_th02.o  ./src/arduino_grove_th02.d  arduino_grove_th02.elf.size  arduino_grove_th02.elf arduino_grove_th02.bin
+' '
+17:19:48 **** Build of configuration Debug for project arduino_grove_th02 ****
+make all 
+'Building file: ../src/arduino_grove_th02.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O1 -g3 -c -fmessage-length=0 -MT"src/arduino_grove_th02.o" -I../../bsp_iop_arduino/iop_arduino_mb/include -mlittle-endian -mcpu=v9.5 -mxl-soft-mul -Wl,--no-relax -MMD -MP -MF"src/arduino_grove_th02.d" -MT"src/arduino_grove_th02.o" -o "src/arduino_grove_th02.o" "../src/arduino_grove_th02.c"
+'Finished building: ../src/arduino_grove_th02.c'
+' '
+'Building target: arduino_grove_th02.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../bsp_iop_arduino/iop_arduino_mb/lib -mlittle-endian -mcpu=v9.5 -mxl-soft-mul -Wl,--no-relax -o "arduino_grove_th02.elf"  ./src/arduino_grove_th02.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: arduino_grove_th02.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size arduino_grove_th02.elf  |tee "arduino_grove_th02.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  18780	    520	   3636	  22936	   5998	arduino_grove_th02.elf
+'Finished building: arduino_grove_th02.elf.size'
+' '
+17:19:52 **** Clean-only build of configuration Debug for project arduino_lcd18 ****
+make clean 
+rm -rf  ./src/ST7735.o ./src/arduino_lcd18.o  ./src/ST7735.d ./src/arduino_lcd18.d  arduino_lcd18.elf.size  arduino_lcd18.elf arduino_lcd18.bin
+' '
+17:19:53 **** Build of configuration Debug for project arduino_lcd18 ****
+make all 
+'Building file: ../src/ST7735.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/ST7735.o" -I../../bsp_iop_arduino/iop_arduino_mb/include -mlittle-endian -mcpu=v9.6 -mxl-soft-mul -Wl,--no-relax -MMD -MP -MF"src/ST7735.d" -MT"src/ST7735.o" -o "src/ST7735.o" "../src/ST7735.c"
+'Finished building: ../src/ST7735.c'
+' '
+'Building file: ../src/arduino_lcd18.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/arduino_lcd18.o" -I../../bsp_iop_arduino/iop_arduino_mb/include -mlittle-endian -mcpu=v9.6 -mxl-soft-mul -Wl,--no-relax -MMD -MP -MF"src/arduino_lcd18.d" -MT"src/arduino_lcd18.o" -o "src/arduino_lcd18.o" "../src/arduino_lcd18.c"
+'Finished building: ../src/arduino_lcd18.c'
+' '
+'Building target: arduino_lcd18.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../bsp_iop_arduino/iop_arduino_mb/lib -mlittle-endian -mcpu=v9.6 -mxl-soft-mul -Wl,--no-relax -o "arduino_lcd18.elf"  ./src/ST7735.o ./src/arduino_lcd18.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: arduino_lcd18.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size arduino_lcd18.elf  |tee "arduino_lcd18.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  56228	    640	   3836	  60704	   ed20	arduino_lcd18.elf
+'Finished building: arduino_lcd18.elf.size'
+' '
+17:19:58 **** Clean-only build of configuration Debug for project arduino_mailbox ****
+make clean 
+rm -rf  ./src/arduino_mailbox.o  ./src/arduino_mailbox.d  arduino_mailbox.elf.size  arduino_mailbox.elf arduino_mailbox.bin
+' '
+17:19:59 **** Build of configuration Debug for project arduino_mailbox ****
+make all 
+'Building file: ../src/arduino_mailbox.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/arduino_mailbox.o" -I../../bsp_iop_arduino/iop_arduino_mb/include -mlittle-endian -mcpu=v9.5 -mxl-soft-mul -Wl,--no-relax -MMD -MP -MF"src/arduino_mailbox.d" -MT"src/arduino_mailbox.o" -o "src/arduino_mailbox.o" "../src/arduino_mailbox.c"
+../src/arduino_mailbox.c: In function 'main':
+../src/arduino_mailbox.c:111:46: warning: assignment makes integer from pointer without a cast [-Wint-conversion]
+                 case 0 : *(u8 *)MAILBOX_ADDR = (u8 *) MAILBOX_DATA(i); break;
+                                              ^
+../src/arduino_mailbox.c:112:47: warning: assignment makes integer from pointer without a cast [-Wint-conversion]
+                 case 1 : *(u16 *)MAILBOX_ADDR = (u16 *) MAILBOX_DATA(i); break;
+                                               ^
+../src/arduino_mailbox.c:114:47: warning: assignment makes integer from pointer without a cast [-Wint-conversion]
+                 case 3 : *(u32 *)MAILBOX_ADDR = (u32 *)MAILBOX_DATA(i); break;
+                                               ^
+'Finished building: ../src/arduino_mailbox.c'
+' '
+'Building target: arduino_mailbox.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../bsp_iop_arduino/iop_arduino_mb/lib -mlittle-endian -mcpu=v9.5 -mxl-soft-mul -Wl,--no-relax -o "arduino_mailbox.elf"  ./src/arduino_mailbox.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: arduino_mailbox.elf'
+' '
+make --no-print-directory post-build
+mb-objcopy -O binary mailbox.elf mailbox.bin
+mb-objcopy: 'mailbox.elf': No such file
+make[1]: [post-build] ´íÎó 1 (ºöÂÔ)
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size arduino_mailbox.elf  |tee "arduino_mailbox.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   7020	    412	   2232	   9664	   25c0	arduino_mailbox.elf
+'Finished building: arduino_mailbox.elf.size'
+' '

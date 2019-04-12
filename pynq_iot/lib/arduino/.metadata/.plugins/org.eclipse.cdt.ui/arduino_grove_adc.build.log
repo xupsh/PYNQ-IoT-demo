@@ -1,0 +1,21 @@
+17:19:06 **** Build of configuration Debug for project arduino_grove_adc ****
+make all 
+'Building file: ../src/arduino_grove_adc.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O3 -g3 -c -fmessage-length=0 -MT"src/arduino_grove_adc.o" -I../../bsp_iop_arduino/iop_arduino_mb/include -mlittle-endian -mcpu=v9.5 -mxl-soft-mul -Wl,--no-relax -MMD -MP -MF"src/arduino_grove_adc.d" -MT"src/arduino_grove_adc.o" -o "src/arduino_grove_adc.o" "../src/arduino_grove_adc.c"
+'Finished building: ../src/arduino_grove_adc.c'
+' '
+'Building target: arduino_grove_adc.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../bsp_iop_arduino/iop_arduino_mb/lib -mlittle-endian -mcpu=v9.5 -mxl-soft-mul -Wl,--no-relax -o "arduino_grove_adc.elf"  ./src/arduino_grove_adc.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: arduino_grove_adc.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size arduino_grove_adc.elf  |tee "arduino_grove_adc.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  28164	    520	   1844	  30528	   7740	arduino_grove_adc.elf
+'Finished building: arduino_grove_adc.elf.size'
+' '
+
+17:19:10 Build Finished (took 3s.762ms)
+

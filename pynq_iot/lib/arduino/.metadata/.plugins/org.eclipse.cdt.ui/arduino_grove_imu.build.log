@@ -1,0 +1,21 @@
+17:19:34 **** Build of configuration Debug for project arduino_grove_imu ****
+make all 
+'Building file: ../src/arduino_grove_imu.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O1 -g3 -c -fmessage-length=0 -MT"src/arduino_grove_imu.o" -I../../bsp_iop_arduino/iop_arduino_mb/include -mlittle-endian -mcpu=v9.5 -mxl-soft-mul -Wl,--no-relax -MMD -MP -MF"src/arduino_grove_imu.d" -MT"src/arduino_grove_imu.o" -o "src/arduino_grove_imu.o" "../src/arduino_grove_imu.c"
+'Finished building: ../src/arduino_grove_imu.c'
+' '
+'Building target: arduino_grove_imu.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../bsp_iop_arduino/iop_arduino_mb/lib -mlittle-endian -mcpu=v9.5 -mxl-soft-mul -Wl,--no-relax -o "arduino_grove_imu.elf"  ./src/arduino_grove_imu.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: arduino_grove_imu.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size arduino_grove_imu.elf  |tee "arduino_grove_imu.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  24944	    520	   3688	  29152	   71e0	arduino_grove_imu.elf
+'Finished building: arduino_grove_imu.elf.size'
+' '
+
+17:19:38 Build Finished (took 3s.958ms)
+
