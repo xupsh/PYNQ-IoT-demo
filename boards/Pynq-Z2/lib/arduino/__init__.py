@@ -47,12 +47,6 @@ from .arduino_grove_ear_hr import Grove_EarHR
 from .arduino_grove_finger_hr import Grove_FingerHR
 from .arduino_grove_haptic_motor import Grove_HapticMotor
 from .arduino_grove_th02 import Grove_TH02
-from .arduino_automoto import Automoto
-from .arduino_linetracker import LT_sen
-from .arduino_gesture import Gesture_sen
-from .arduino_run_linetracker import Run_LT
-from .arduino_run_usranger import Run_usranger
-from .arduino_run_gesture import Run_gesture
 from .arduino_grove_usranger import Grove_usranger
 from .arduino_grove_autoalarm import Grove_autoalarm
 from .arduino_grove_gesgame import Grove_gesgame
